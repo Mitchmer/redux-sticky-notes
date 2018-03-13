@@ -27,7 +27,10 @@ class StickyForm extends React.Component {
       <div>
         <h3>Create A New Sticky</h3>
         <form onSubmit={this.handleSubmit}>
-          <input value={note} onChange={this.handleChange} />
+          <div className="form-note">
+            <textarea className="form-input" value={note} onChange={this.handleChange}></textarea>
+            <button className="form-btn">Submit</button>
+          </div>
         </form>
       </div>
     )
